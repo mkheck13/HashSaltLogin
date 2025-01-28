@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashSaltLogin", "HashSaltLogin.csproj", "{C7F7A379-8A03-A527-9083-015638CD4BC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7F7A379-8A03-A527-9083-015638CD4BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F7A379-8A03-A527-9083-015638CD4BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F7A379-8A03-A527-9083-015638CD4BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F7A379-8A03-A527-9083-015638CD4BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {556CBB80-5F8E-48BA-83BA-6EDC0341070F}
+	EndGlobalSection
+EndGlobal

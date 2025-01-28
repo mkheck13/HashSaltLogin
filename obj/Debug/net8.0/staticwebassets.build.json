@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "grB9NgGUqrBb8eLkyt/fSz3UuVoF1iGN/0+gG3D30oM=",
+  "Source": "HashSaltLogin",
+  "BasePath": "_content/HashSaltLogin",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

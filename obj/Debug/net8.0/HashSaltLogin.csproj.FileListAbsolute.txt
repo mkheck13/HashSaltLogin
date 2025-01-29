@@ -134,3 +134,4 @@ C:\Users\mkhec\Documents\CodeStack 24-25\Level 2\Week 4\HashSaltLogin\obj\Debug\
 C:\Users\mkhec\Documents\CodeStack 24-25\Level 2\Week 4\HashSaltLogin\obj\Debug\net8.0\HashSaltLogin.pdb
 C:\Users\mkhec\Documents\CodeStack 24-25\Level 2\Week 4\HashSaltLogin\obj\Debug\net8.0\HashSaltLogin.genruntimeconfig.cache
 C:\Users\mkhec\Documents\CodeStack 24-25\Level 2\Week 4\HashSaltLogin\obj\Debug\net8.0\ref\HashSaltLogin.dll
+C:\Users\mkhec\Documents\CodeStack 24-25\Level 2\Week 4\HashSaltLogin\obj\Debug\net8.0\HashSaltLogin.sourcelink.json

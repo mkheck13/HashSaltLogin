@@ -71,5 +71,45 @@ namespace HashSaltLogin.Services
 
             return hashedPassword;
         }
+
+        public string Login(UserDTO user)
+        {
+            //Get our User info if they exist
+            var foundUser = GetUserByEmail(user.Email);
+
+            if(foundUser == null)
+            {
+                return null;
+            }
+
+            if(!VerifyPassword(user.Password, foundUser.Salt, foundUser.Hash))
+            {
+                return null;
+            }
+
+            return "Token";
+
+            // Now we know that the user exists in our DataBase we have to Verify the password
+        }
+
+        private UserModel GetUserByEmail(string email)
+        {
+            return _dataBase.Users.SingleOrDefault(user => user.Email == email);
+        }
+
+        private static bool VerifyPassword(string password, string salt, string hash)
+        {
+            //we have to convert our user salt from a string to a byte array for our hash Algorithm
+            byte[] saltBytes = Convert.FromBase64String(salt);
+
+            string newHash;
+            using(var deriveBytes = new Rfc2898DeriveBytes(password, saltBytes, 310000, HashAlgorithmName.SHA256))
+            {
+                newHash = Convert.ToBase64String(deriveBytes.GetBytes(32));
+            }
+
+            return hash == newHash;
+
+        }
     }
 }

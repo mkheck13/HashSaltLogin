@@ -27,5 +27,23 @@ namespace HashSaltLogin.Controllers
             return _userServices.CreateUser(newUser);
         }
 
+        [HttpPost]
+        [Route("Login")]
+        public IActionResult Login(UserDTO user)
+        {
+            //we are storing our login return inside of our token variable to eventually check if the login was successful
+            string stringToken = _userServices.Login(user);
+
+            if(stringToken != null)
+            {
+                return Ok(new {Token = stringToken});
+            }
+            else
+            {
+                return Unauthorized(new {Message = "Login was unsuccessful Invalid Email or Password"});
+            }
+
+        }
+
     }
 }

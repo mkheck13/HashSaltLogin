@@ -28,3 +28,10 @@ So salt is a random piece of data added to the end of our password before hashin
 Example "MyPassword" = "MyPassword+RandomSalt"
 
 The salt insures that no two users have the same password to hash. We always Salt before we Hash.
+
+### Day Three Covering IActionResult , CORS, and Login Logic
+
+## Intro to the return type IActionResult.
+
+IActionResult lets us Controller our HTTP status 200 Ok 4oo Unothorized as well as Error and then 500 Internal Error
+

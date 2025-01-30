@@ -29,7 +29,7 @@ namespace HashSaltLogin.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public IActionResult Login(UserDTO user)
+        public IActionResult Login([FromBody]UserDTO user)
         {
             //we are storing our login return inside of our token variable to eventually check if the login was successful
             string stringToken = _userServices.Login(user);
